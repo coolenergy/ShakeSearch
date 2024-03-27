@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>ShakeSearch</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <h1 class="title">ShakeSearch</h1>
+  <div class="container">
+    <form id="form" class="search-form">
+      <div class="input-group">
+        <label for="query">Query</label>
+        <input type="text" id="query" name="query">
+      </div>
+      <div class="input-group">
+        <label for="page">Page</label>
+        <input type="number" id="page" name="page" min="1" value="1">
+      </div>
+      <div class="input-group">
+        <label for="perPage">Per Page</label>
+        <input type="number" id="perPage" name="perPage" min="1" value="10">
+      </div>
+      <button type="submit" class="search-button">Search</button>
+    </form>
+    <div class="results">
+      <table id="table">
+        <tbody id="table-body"></tbody>
+      </table>
+      <div id="pagination" class="pagination"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
